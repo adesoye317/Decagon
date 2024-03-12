@@ -1,0 +1,701 @@
+2024-02-14 11:04:49.875 -  - Starting SmeappCardOnboardingServiceApplication using Java 21.0.1 on ECI-ADGOEH5.ecobank.group with PID 10494 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 11:04:49.878 -  - The following 1 profile is active: "dev"
+2024-02-14 11:04:49.989 -  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.ecobank.bankaccount.SmeappCardOnboardingServiceApplication]; nested exception is java.io.FileNotFoundException: /usr/app/SME_BACKEND/config/smeapp-card-onboarding.properties (No such file or directory)
+2024-02-14 11:04:50.042 -  - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.ecobank.bankaccount.SmeappCardOnboardingServiceApplication]; nested exception is java.io.FileNotFoundException: /usr/app/SME_BACKEND/config/smeapp-card-onboarding.properties (No such file or directory)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.ecobank.bankaccount.SmeappCardOnboardingServiceApplication.main(SmeappCardOnboardingServiceApplication.java:12)
+Caused by: java.io.FileNotFoundException: /usr/app/SME_BACKEND/config/smeapp-card-onboarding.properties (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+	at org.springframework.core.io.UrlResource.getInputStream(UrlResource.java:187)
+	at org.springframework.core.io.support.EncodedResource.getInputStream(EncodedResource.java:159)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:110)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:81)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:67)
+	at org.springframework.core.io.support.ResourcePropertySource.<init>(ResourcePropertySource.java:67)
+	at org.springframework.core.io.support.DefaultPropertySourceFactory.createPropertySource(DefaultPropertySourceFactory.java:37)
+	at org.springframework.context.annotation.ConfigurationClassParser.processPropertySource(ConfigurationClassParser.java:465)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:279)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	... 13 common frames omitted
+2024-02-14 11:05:55.704 -  - Starting SmeappCardOnboardingServiceApplication using Java 21.0.1 on ECI-ADGOEH5.ecobank.group with PID 10558 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 11:05:55.706 -  - The following 1 profile is active: "dev"
+2024-02-14 11:05:56.295 -  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.context.MissingWebServerFactoryBeanException: No qualifying bean of type 'org.springframework.boot.web.servlet.server.ServletWebServerFactory' available: Unable to start AnnotationConfigServletWebServerApplicationContext due to missing ServletWebServerFactory bean
+2024-02-14 11:05:56.302 -  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-14 11:05:56.324 -  - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web application could not be started as there was no org.springframework.boot.web.servlet.server.ServletWebServerFactory bean defined in the context.
+
+Action:
+
+Check your application's dependencies for a supported servlet web server.
+Check the configured web application type.
+
+2024-02-14 11:16:55.177 -  - Starting SmeappCardOnboardingServiceApplication on ECI-ADGOEH5.ecobank.group with PID 10975 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 11:16:55.179 -  - The following profiles are active: dev
+2024-02-14 11:16:56.190 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$fcd0c4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 11:16:56.235 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 11:16:56.532 -  - Tomcat initialized with port(s): 8080 (http)
+2024-02-14 11:16:56.542 -  - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-14 11:16:56.543 -  - Starting service [Tomcat]
+2024-02-14 11:16:56.543 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 11:16:56.607 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 11:16:56.608 -  - Root WebApplicationContext: initialization completed in 1377 ms
+2024-02-14 11:16:57.314 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 11:16:57.476 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 11:16:57.699 -  - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-14 11:16:57.761 -  - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-14 11:16:57.990 -  - Started SmeappCardOnboardingServiceApplication in 3.591 seconds (JVM running for 4.004)
+2024-02-14 11:23:27.065 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 11:23:34.970 -  - Starting SmeappCardOnboardingServiceApplication on ECI-ADGOEH5.ecobank.group with PID 11163 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 11:23:34.972 -  - The following profiles are active: dev
+2024-02-14 11:23:36.102 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$fdd3e7dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 11:23:36.161 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 11:23:36.490 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 11:23:36.506 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 11:23:36.506 -  - Starting service [Tomcat]
+2024-02-14 11:23:36.507 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 11:23:36.594 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 11:23:36.594 -  - Root WebApplicationContext: initialization completed in 1574 ms
+2024-02-14 11:23:37.173 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 11:23:37.313 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 11:23:37.524 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 11:23:37.562 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 11:23:37.786 -  - Started SmeappCardOnboardingServiceApplication in 3.375 seconds (JVM running for 3.844)
+2024-02-14 11:23:42.073 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 11:23:42.074 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 11:23:42.080 -  - Completed initialization in 6 ms
+2024-02-14 11:23:42.192 -  - THE CARD MODEL PAYLOAD::{"hostHeaderInfo":{"sourceCode":"ECOOBANKMOBILE","requestType":"ID","requestId":"CARDc37940a68","sourceChannelId":"MOBILE","ipAddress":"1.1.1.1","requestToken":"25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c","affiliateCode":"EGH"},"request":{"cvv":"","expiry":"2406","pan":"iKWfohWdMjF5415iYR7504OiEMYgab/4odN/JY+Mhg6iT9WXbdhQYw\u003d\u003d","affiliateCode":"EGH"}}
+2024-02-14 11:23:42.194 -  - The card onboarding url::https://160.119.246.165/unifiedapis-v2/services/debitcarddetails
+2024-02-14 11:23:42.194 -  - THE UNIFIED TOKEN URL::https://160.119.246.165/authorization-server-v1/oauth/token?grant_type=password&client_id=test&client_secret=test&username=test&password=testing
+2024-02-14 11:23:44.974 -  - THE SERVER TOKEN RESPONSE::{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MTgyMjUsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6IjJhZjFjYzdmLTBhNTQtNGNjYS1hOWM1LWU3NzZhYzRjN2U3MCIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.N9GQeS7qn3hRpdgq3DvQRTiqpZKvlgunPsVLejUBA4hO2asdsGAQ3yMJ0yaa7QLEFNAU1npfRXiUPg78FHEHzg4iSw0yBQcjNnE0ymbjY3Ey9fqGigRXg-VMLE-cBUSVB8fBFcvv1F-Ht94pRya-KoTqw08J1uekGlCMqmMeJdkpLWY3cixqVq17rZX3xf_BYoaxQpOh5U7ofX9HcaU_0v7m2o93LNh091KblZQCmg9HMs_NOEQ9CGs67KkrAUZ_xepx8Pc0-16_DML6wPMCEV20mbO_DB1dcKZMO0xg2-s0Q-n_cfPWb1X4HCD0ltTKn__yFGUtiwiu2_laDlEzSw","token_type":"bearer","refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ0ZXN0Iiwic2NvcGUiOlsidXNlci52aWV3cHJvZmlsZSJdLCJhdGkiOiIyYWYxY2M3Zi0wYTU0LTRjY2EtYTljNS1lNzc2YWM0YzdlNzAiLCJleHAiOjE3MDgwNzkwMjUsImF1dGhvcml0aWVzIjpbIlJPTEVfVU5JRklFRF9FTlFVSVJJRVMiXSwianRpIjoiOWFhOGEyNzAtNjA2Ni00Y2VkLTg2OTgtNzZhZGZmNzg3YTNkIiwiY2xpZW50X2lkIjoidGVzdCJ9.MRw-99UrAN2w_XpWMciVdBS1Z-6qZvH8vyiOQSKNG2hSbkewCMM-eoElwd5pdTcIrI5xUOsgaC6nYD7-ewKhnlf_W_Mov1PVJXQ81nyuysxIayfnpKggBcZncegXp6yhrcJdOZ_kvYhbi1Y0NiyRDya64_sKCUoccr_UYQp4e_HTer73rtJ2t15dXa0Kccw3eSXOgVMtv77nMg3keEG3UgRiBLepQu9EYrOG77-u3hF0qOuFBAxzc2moAArIMuijuLw3YanDUr1fT-6IKvoyf7dlxqj1KLpqz2I_FeCTOHFgGkwpd5zJj7PUTniAKGkun_UL3ypSKxQu9Zf7BUr05w","expires_in":11999,"scope":"user.viewprofile","jti":"2af1cc7f-0a54-4cca-a9c5-e776ac4c7e70"}
+2024-02-14 11:23:44.984 -  - THE TOKEN::eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MTgyMjUsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6IjJhZjFjYzdmLTBhNTQtNGNjYS1hOWM1LWU3NzZhYzRjN2U3MCIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.N9GQeS7qn3hRpdgq3DvQRTiqpZKvlgunPsVLejUBA4hO2asdsGAQ3yMJ0yaa7QLEFNAU1npfRXiUPg78FHEHzg4iSw0yBQcjNnE0ymbjY3Ey9fqGigRXg-VMLE-cBUSVB8fBFcvv1F-Ht94pRya-KoTqw08J1uekGlCMqmMeJdkpLWY3cixqVq17rZX3xf_BYoaxQpOh5U7ofX9HcaU_0v7m2o93LNh091KblZQCmg9HMs_NOEQ9CGs67KkrAUZ_xepx8Pc0-16_DML6wPMCEV20mbO_DB1dcKZMO0xg2-s0Q-n_cfPWb1X4HCD0ltTKn__yFGUtiwiu2_laDlEzSw
+2024-02-14 11:23:45.925 -  - THE CARD REQUEST SENT:::CardOnboardingModelRequest{hostHeaderInfo = 'HostHeaderInfo{sourceCode = 'ECOOBANKMOBILE',requestType = 'ID',requestId = 'CARDc37940a68',sourceChannelId = 'MOBILE',ipAddress = '1.1.1.1',requestToken = '25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c',affiliateCode = 'EGH'}',request = 'Request{cvv = '',expiry = '2406',pan = 'iKWfohWdMjF5415iYR7504OiEMYgab/4odN/JY+Mhg6iT9WXbdhQYw==',affiliateCode = 'EGH'}'}
+2024-02-14 11:27:17.991 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 11:27:28.142 -  - Starting SmeappCardOnboardingServiceApplication on ECI-ADGOEH5.ecobank.group with PID 11310 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 11:27:28.144 -  - The following profiles are active: dev
+2024-02-14 11:27:29.275 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d831b15c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 11:27:29.326 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 11:27:29.637 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 11:27:29.652 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 11:27:29.653 -  - Starting service [Tomcat]
+2024-02-14 11:27:29.653 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 11:27:29.762 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 11:27:29.763 -  - Root WebApplicationContext: initialization completed in 1569 ms
+2024-02-14 11:27:30.333 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 11:27:30.509 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 11:27:30.734 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 11:27:30.770 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 11:27:31.046 -  - Started SmeappCardOnboardingServiceApplication in 3.422 seconds (JVM running for 3.808)
+2024-02-14 11:27:38.652 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 11:27:38.653 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 11:27:38.660 -  - Completed initialization in 7 ms
+2024-02-14 11:27:38.796 -  - THE CARD MODEL PAYLOAD::{"hostHeaderInfo":{"sourceCode":"ECOOBANKMOBILE","requestType":"ID","requestId":"CARD7a40b44c2","sourceChannelId":"MOBILE","ipAddress":"1.1.1.1","requestToken":"25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c","affiliateCode":"EGH"},"request":{"cvv":"","expiry":"2406","pan":"r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj","affiliateCode":"EGH"}}
+2024-02-14 11:27:38.798 -  - The card onboarding url::https://160.119.246.165/unifiedapis-v2/services/debitcarddetails
+2024-02-14 11:27:38.799 -  - THE UNIFIED TOKEN URL::https://160.119.246.165/authorization-server-v1/oauth/token?grant_type=password&client_id=test&client_secret=test&username=test&password=testing
+2024-02-14 11:27:43.443 -  - THE SERVER TOKEN RESPONSE::{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MTg0NjEsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6IjVlNjI1NWExLWI2MTEtNDA1ZS1iNWY1LTcwMDJkMjI1NmY3YiIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.LceV4vTHouUqSAxsDzBmqylQmknQdErP5Ek6dOuE_S0NtUGLQpBd2zeoNTNrCIQcV6Xvym4hMXZMYb_YCKHS_hQpsGIAU_2bu0AXjHGxcjS-zvxEFOP7PEbkDlARuN9cuWeWEPke9U1Az6qPxFEWXFByzZKhcWV5I88AGS2EzdQPMZclRAz7EFXFZQEhaJs_TTpssuY7XPug7PTU2GE1zO1F1KUSEzNwk-2Ews7JXyKH958a975NbBz8UBmL2TTirbmq0A8le96qHYIpJSr6YZNnoyAk1P5_UG4pBS0Z0whEqXqmdrJQ5rMur9VJ0AC72st5AVjNRh0MfNgUJYxHuQ","token_type":"bearer","refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ0ZXN0Iiwic2NvcGUiOlsidXNlci52aWV3cHJvZmlsZSJdLCJhdGkiOiI1ZTYyNTVhMS1iNjExLTQwNWUtYjVmNS03MDAyZDIyNTZmN2IiLCJleHAiOjE3MDgwNzkyNjEsImF1dGhvcml0aWVzIjpbIlJPTEVfVU5JRklFRF9FTlFVSVJJRVMiXSwianRpIjoiODNjODRhOGYtNjc5NS00MWIyLWIwMWItNWUyNTlhZTIwMjZjIiwiY2xpZW50X2lkIjoidGVzdCJ9.Pm8Ay67oMmO7dtoYyzgpsMcslKRsXGabNf9xWV92av1MHvm_oWyfJnPXvC1ZEmXcp7pgtT5YvFMD5XD2nxi9TK5ghfQIuEYhXHdYLFcvuvPZeeNyQhlpc4hEBouSwN5-VbwixIe2_G-3BhK9iLnI63b7lyZP0YZjJApNvFYyqKVXcYnt1Ssmk0l6HcO7UHk6v7J_aUHGAFORNqkV-VYsJSv7Zut7eU93qFahq1D-MWrEWKvB4MB8IVXTeSzgJqSTaRskIPMs0HbB3UjdYxAwxMkboT_cTPCJdTRm0XpW1mC52tMR-RArDJk330URA-uq2dNlg5S6wkkBpqhH1IiqVA","expires_in":11999,"scope":"user.viewprofile","jti":"5e6255a1-b611-405e-b5f5-7002d2256f7b"}
+2024-02-14 11:27:43.448 -  - THE TOKEN::eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MTg0NjEsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6IjVlNjI1NWExLWI2MTEtNDA1ZS1iNWY1LTcwMDJkMjI1NmY3YiIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.LceV4vTHouUqSAxsDzBmqylQmknQdErP5Ek6dOuE_S0NtUGLQpBd2zeoNTNrCIQcV6Xvym4hMXZMYb_YCKHS_hQpsGIAU_2bu0AXjHGxcjS-zvxEFOP7PEbkDlARuN9cuWeWEPke9U1Az6qPxFEWXFByzZKhcWV5I88AGS2EzdQPMZclRAz7EFXFZQEhaJs_TTpssuY7XPug7PTU2GE1zO1F1KUSEzNwk-2Ews7JXyKH958a975NbBz8UBmL2TTirbmq0A8le96qHYIpJSr6YZNnoyAk1P5_UG4pBS0Z0whEqXqmdrJQ5rMur9VJ0AC72st5AVjNRh0MfNgUJYxHuQ
+2024-02-14 11:27:44.933 -  - THE CARD REQUEST SENT:::CardOnboardingModelRequest{hostHeaderInfo = 'HostHeaderInfo{sourceCode = 'ECOOBANKMOBILE',requestType = 'ID',requestId = 'CARD7a40b44c2',sourceChannelId = 'MOBILE',ipAddress = '1.1.1.1',requestToken = '25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c',affiliateCode = 'EGH'}',request = 'Request{cvv = '',expiry = '2406',pan = 'r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj',affiliateCode = 'EGH'}'}
+2024-02-14 11:27:44.943 -  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]] with root cause
+org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:505)
+	at org.json.JSONObject.<init>(JSONObject.java:215)
+	at org.json.JSONObject.<init>(JSONObject.java:399)
+	at CardOnboardingService.cardOnboard(CardOnboardingService.java:87)
+	at CardAuthController.cardOnboarding(CardAuthController.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-02-14 11:28:30.508 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 11:28:41.385 -  - Starting SmeappCardOnboardingServiceApplication on ECI-ADGOEH5.ecobank.group with PID 11361 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 11:28:41.387 -  - The following profiles are active: dev
+2024-02-14 11:28:42.495 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$297b6a46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 11:28:42.546 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 11:28:42.848 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 11:28:42.861 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 11:28:42.862 -  - Starting service [Tomcat]
+2024-02-14 11:28:42.863 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 11:28:42.959 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 11:28:42.959 -  - Root WebApplicationContext: initialization completed in 1529 ms
+2024-02-14 11:28:43.563 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 11:28:43.726 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 11:28:43.948 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 11:28:43.986 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 11:28:44.220 -  - Started SmeappCardOnboardingServiceApplication in 3.33 seconds (JVM running for 3.744)
+2024-02-14 11:29:22.417 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 11:29:22.418 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 11:29:22.427 -  - Completed initialization in 8 ms
+2024-02-14 11:29:22.595 -  - THE CARD MODEL PAYLOAD::{"hostHeaderInfo":{"sourceCode":"ECOOBANKMOBILE","requestType":"ID","requestId":"CARD6933f6406","sourceChannelId":"MOBILE","ipAddress":"1.1.1.1","requestToken":"25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c","affiliateCode":"EGH"},"request":{"cvv":"","expiry":"2406","pan":"r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj","affiliateCode":"EGH"}}
+2024-02-14 11:29:22.599 -  - The card onboarding url::https://160.119.246.165/unifiedapis-v2/services/debitcarddetails
+2024-02-14 11:29:22.600 -  - THE UNIFIED TOKEN URL::https://160.119.246.165/authorization-server-v1/oauth/token?grant_type=password&client_id=test&client_secret=test&username=test&password=testing
+2024-02-14 11:29:25.750 -  - THE SERVER TOKEN RESPONSE::{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MTg1NjYsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6ImEzMzBiOWU2LWRhZDMtNDA3Yi04MjVhLTRiY2EzN2VjMWI0MSIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.bkrLOzMbIosh0ztSqMe3_KyBrjzeOWNHJikG6rwYW_pk6IhaedNUtRhU0susX64lp1upyZufdmwcH_hZpmLagYGXHKxuC_Lq94-HRaQ4AsjHCHbB_JjAX5itTHFIko2YBQHyyD_NIU8wqaxpjsL4AYr6zyEIB0ug7VyPDQgH3emSWLfU_ebEy19I0iIPPWoo4HL7VWaQyYsdKsSoH0z1_xbD2dCe_oYc2JbrROsgMsrzDRCkSL84Be9d4Nts1GvmLR4LfCcDM6jUOWlGvDha8LP6cJKlUQ7c0c-zuYqqDKMBlsWpQJrgJKPfM1Y7HjqEeh2TONhzsIAPanwVOiIrtg","token_type":"bearer","refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ0ZXN0Iiwic2NvcGUiOlsidXNlci52aWV3cHJvZmlsZSJdLCJhdGkiOiJhMzMwYjllNi1kYWQzLTQwN2ItODI1YS00YmNhMzdlYzFiNDEiLCJleHAiOjE3MDgwNzkzNjYsImF1dGhvcml0aWVzIjpbIlJPTEVfVU5JRklFRF9FTlFVSVJJRVMiXSwianRpIjoiYTAzMWUzOTctODM5NS00Y2I4LTlhNTktMzUzMWI1N2EzYzBjIiwiY2xpZW50X2lkIjoidGVzdCJ9.WYNrnvBI0p9U9TJRktAj7P-co8YraKtSgnUi2l_Cz8uMOubTflwBUkhziioo44boBFXtPc9Ze1UvEjsqirIWlvpm6Cf4_A5WC8SQ_qdhDwC-eUT9V0HTrW94AP2-51nDH7XbD9odlhaSGYhGO0ycQju7YO-PBXM--r2mC_6d-lt0-7Gg-zzQDMDbKbdcP1COgBQfxnNJXcipnsSFtTI2RVFbjhRPaTORwygy-wzGBddJQzaOE6SRAfXwLkA10ZEKeJZpi4_WRzoczo7lN3dIMaaCbpSQT25CnskdP3xNxGFClWX_VlZAKvDF4aS2GZ5F34O-wBnjuy1fQRzNXILuWQ","expires_in":11999,"scope":"user.viewprofile","jti":"a330b9e6-dad3-407b-825a-4bca37ec1b41"}
+2024-02-14 11:29:25.756 -  - THE TOKEN::eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MTg1NjYsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6ImEzMzBiOWU2LWRhZDMtNDA3Yi04MjVhLTRiY2EzN2VjMWI0MSIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.bkrLOzMbIosh0ztSqMe3_KyBrjzeOWNHJikG6rwYW_pk6IhaedNUtRhU0susX64lp1upyZufdmwcH_hZpmLagYGXHKxuC_Lq94-HRaQ4AsjHCHbB_JjAX5itTHFIko2YBQHyyD_NIU8wqaxpjsL4AYr6zyEIB0ug7VyPDQgH3emSWLfU_ebEy19I0iIPPWoo4HL7VWaQyYsdKsSoH0z1_xbD2dCe_oYc2JbrROsgMsrzDRCkSL84Be9d4Nts1GvmLR4LfCcDM6jUOWlGvDha8LP6cJKlUQ7c0c-zuYqqDKMBlsWpQJrgJKPfM1Y7HjqEeh2TONhzsIAPanwVOiIrtg
+2024-02-14 11:29:27.085 -  - THE CARD REQUEST SENT:::CardOnboardingModelRequest{hostHeaderInfo = 'HostHeaderInfo{sourceCode = 'ECOOBANKMOBILE',requestType = 'ID',requestId = 'CARD6933f6406',sourceChannelId = 'MOBILE',ipAddress = '1.1.1.1',requestToken = '25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c',affiliateCode = 'EGH'}',request = 'Request{cvv = '',expiry = '2406',pan = 'r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj',affiliateCode = 'EGH'}'}
+2024-02-14 11:29:27.086 -  - THE RESP::<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 7799674731408995976<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>
+2024-02-14 11:29:27.097 -  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]] with root cause
+org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:505)
+	at org.json.JSONObject.<init>(JSONObject.java:215)
+	at org.json.JSONObject.<init>(JSONObject.java:399)
+	at CardOnboardingService.cardOnboard(CardOnboardingService.java:89)
+	at CardAuthController.cardOnboarding(CardAuthController.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-02-14 11:39:47.051 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 11:39:58.509 -  - Starting SmeappCardOnboardingServiceApplication on ECI-ADGOEH5.ecobank.group with PID 11662 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 11:39:58.510 -  - The following profiles are active: dev
+2024-02-14 11:39:59.544 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f5d6c97f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 11:39:59.586 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 11:39:59.912 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 11:39:59.923 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 11:39:59.923 -  - Starting service [Tomcat]
+2024-02-14 11:39:59.924 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 11:40:00.004 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 11:40:00.005 -  - Root WebApplicationContext: initialization completed in 1449 ms
+2024-02-14 11:40:00.624 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 11:40:00.794 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 11:40:01.004 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 11:40:01.036 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 11:40:01.316 -  - Started SmeappCardOnboardingServiceApplication in 3.315 seconds (JVM running for 3.772)
+2024-02-14 11:40:20.933 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 11:40:20.933 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 11:40:20.945 -  - Completed initialization in 12 ms
+2024-02-14 11:40:21.105 -  - THE CARD MODEL PAYLOAD::{"hostHeaderInfo":{"sourceCode":"ECOOBANKMOBILE","requestType":"ID","requestId":"CARDb05e9a314","sourceChannelId":"MOBILE","ipAddress":"1.1.1.1","requestToken":"25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c","affiliateCode":"EGH"},"request":{"cvv":"","expiry":"2406","pan":"r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj","affiliateCode":"EGH"}}
+2024-02-14 11:40:21.108 -  - The card onboarding url::https://160.119.246.165/unifiedapis-v2/services/debitcarddetails
+2024-02-14 11:40:21.108 -  - THE UNIFIED TOKEN URL::https://160.119.246.165/authorization-server-v1/oauth/token?grant_type=password&client_id=test&client_secret=test&username=test&password=testing
+2024-02-14 11:40:23.739 -  - THE SERVER TOKEN RESPONSE::{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MTkyMjQsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6IjAzMWNmYjVkLTJiMDItNDUxYy04NWIyLTIxMjU0YmIzM2I5YyIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.FLaEcyU1uc_3Hq2omjSnu-iRJSEb0m_bvLxMIkhujCzwx3w54pmf4hA1AOV8daL6GUhf9h0JP8CBO6VHBVoGHU5-K_9LoOSP05Em8AyaqQyn_jswolbUy74-Z4Py4c1nLSkCezLY-GNHLtutZAONbsP9hErWbYTH4L1zQuWE3wef0EXKTqrU-Cp7Qyv48zK1B0SnT_W_1L3RCmkgizhYRzGbffv7zT9pVesGM_SdeAsNhmIExGZVlFFKzwL4zWihvUA_I4ynKwcp32V4thtHzPtmHiqaQiHTdVLgYuf_cvvIO7rqlZ5wZcS7FCee49HEiGfuO7c7mcKCnyyAKBdt7g","token_type":"bearer","refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ0ZXN0Iiwic2NvcGUiOlsidXNlci52aWV3cHJvZmlsZSJdLCJhdGkiOiIwMzFjZmI1ZC0yYjAyLTQ1MWMtODViMi0yMTI1NGJiMzNiOWMiLCJleHAiOjE3MDgwODAwMjQsImF1dGhvcml0aWVzIjpbIlJPTEVfVU5JRklFRF9FTlFVSVJJRVMiXSwianRpIjoiODdhYmFiYzYtYjlhMS00OTY0LWJmZjMtNGFjYTYzMWNiZTczIiwiY2xpZW50X2lkIjoidGVzdCJ9.WJEEFP2FklMjayEQfqJw4UYHj8Baul0zlgicm5XrKOQrPilCVzQgQ1zAmDuI6ZOh2InPKwwWYOB6-caiF0pRLVtMu-pwiEkE0nrJWE_Kbjf39LInMX0hrML4AmtdUXbZzv2KIzf_R-7j32sSz-uf02tWK9IMlcnzRocyLrOlDDCnxdTwZIXGK5bIoqJDgyfA8tco2EhRv1MHk2Dg6l8HSxCNsDsjbzTeu0hBw8AOvfiuvfVuefAefaoRszbq0mD9KJEBuUKQwuO5LDfViQDckkV5yKv2xb6ANX71aKogg6-9zFMS1kaJXo__me8-cqIBMOrejTQCZWTdOuq_dn-EEw","expires_in":11999,"scope":"user.viewprofile","jti":"031cfb5d-2b02-451c-85b2-21254bb33b9c"}
+2024-02-14 11:40:23.746 -  - THE TOKEN::eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MTkyMjQsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6IjAzMWNmYjVkLTJiMDItNDUxYy04NWIyLTIxMjU0YmIzM2I5YyIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.FLaEcyU1uc_3Hq2omjSnu-iRJSEb0m_bvLxMIkhujCzwx3w54pmf4hA1AOV8daL6GUhf9h0JP8CBO6VHBVoGHU5-K_9LoOSP05Em8AyaqQyn_jswolbUy74-Z4Py4c1nLSkCezLY-GNHLtutZAONbsP9hErWbYTH4L1zQuWE3wef0EXKTqrU-Cp7Qyv48zK1B0SnT_W_1L3RCmkgizhYRzGbffv7zT9pVesGM_SdeAsNhmIExGZVlFFKzwL4zWihvUA_I4ynKwcp32V4thtHzPtmHiqaQiHTdVLgYuf_cvvIO7rqlZ5wZcS7FCee49HEiGfuO7c7mcKCnyyAKBdt7g
+2024-02-14 11:40:24.961 -  - THE CARD REQUEST SENT:::CardOnboardingModelRequest{hostHeaderInfo = 'HostHeaderInfo{sourceCode = 'ECOOBANKMOBILE',requestType = 'ID',requestId = 'CARDb05e9a314',sourceChannelId = 'MOBILE',ipAddress = '1.1.1.1',requestToken = '25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c',affiliateCode = 'EGH'}',request = 'Request{cvv = '',expiry = '2406',pan = 'r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj',affiliateCode = 'EGH'}'}
+2024-02-14 11:40:24.963 -  - THE RESP::<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 10952988008725940057<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>
+2024-02-14 11:41:00.210 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 12:23:53.953 -  - Starting SmeappCardOnboardingServiceApplication on EPG-ISBOATENG02.ecobank.group with PID 12707 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 12:23:53.958 -  - The following profiles are active: dev
+2024-02-14 12:23:54.098 -  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [SmeappCardOnboardingServiceApplication]; nested exception is java.io.FileNotFoundException: /usr/app/SME_BACKEND/config/smeapp-card-onboarding.properties (No such file or directory)
+2024-02-14 12:23:54.104 -  - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [SmeappCardOnboardingServiceApplication]; nested exception is java.io.FileNotFoundException: /usr/app/SME_BACKEND/config/smeapp-card-onboarding.properties (No such file or directory)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at SmeappCardOnboardingServiceApplication.main(SmeappCardOnboardingServiceApplication.java:12)
+Caused by: java.io.FileNotFoundException: /usr/app/SME_BACKEND/config/smeapp-card-onboarding.properties (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+	at org.springframework.core.io.UrlResource.getInputStream(UrlResource.java:186)
+	at org.springframework.core.io.support.EncodedResource.getInputStream(EncodedResource.java:159)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:99)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:73)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:59)
+	at org.springframework.core.io.support.ResourcePropertySource.<init>(ResourcePropertySource.java:67)
+	at org.springframework.core.io.support.DefaultPropertySourceFactory.createPropertySource(DefaultPropertySourceFactory.java:37)
+	at org.springframework.context.annotation.ConfigurationClassParser.processPropertySource(ConfigurationClassParser.java:463)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:280)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	... 14 common frames omitted
+2024-02-14 12:24:24.156 -  - Starting SmeappCardOnboardingServiceApplication on EPG-ISBOATENG02.ecobank.group with PID 12745 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 12:24:24.159 -  - The following profiles are active: dev
+2024-02-14 12:24:25.236 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$297b6a46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 12:24:25.287 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 12:24:25.593 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 12:24:25.605 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 12:24:25.606 -  - Starting service [Tomcat]
+2024-02-14 12:24:25.606 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 12:24:25.685 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 12:24:25.686 -  - Root WebApplicationContext: initialization completed in 1481 ms
+2024-02-14 12:24:26.360 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 12:24:26.505 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 12:24:26.706 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 12:24:26.737 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 12:24:26.971 -  - Started SmeappCardOnboardingServiceApplication in 3.302 seconds (JVM running for 3.77)
+2024-02-14 12:24:39.273 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 12:24:39.274 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 12:24:39.288 -  - Completed initialization in 13 ms
+2024-02-14 12:24:39.520 -  - THE CARD MODEL PAYLOAD::{"hostHeaderInfo":{"sourceCode":"ECOOBANKMOBILE","requestType":"ID","requestId":"CARD8c4383f27","sourceChannelId":"MOBILE","ipAddress":"1.1.1.1","requestToken":"25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c","affiliateCode":"EGH"},"request":{"cvv":"","expiry":"2406","pan":"r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj","affiliateCode":"EGH"}}
+2024-02-14 12:24:39.537 -  - The card onboarding url::https://10.4.138.71/unifiedapis-v2/services/debitcarddetails
+2024-02-14 12:24:39.539 -  - THE UNIFIED TOKEN URL::https://160.119.246.165/authorization-server-v1/oauth/token?grant_type=password&client_id=test&client_secret=test&username=test&password=testing
+2024-02-14 12:24:41.999 -  - THE SERVER TOKEN RESPONSE::{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MjE4ODIsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6IjFkZWM3OTRhLWFjYTUtNGU4Zi1iODQ5LTc2YmFlZTc2NTAwMCIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.gbCyZom3yAUttwwEiaay9_hrSt4E6-mAXD6MTJhtBd3_IgR3aIlksLsRQRLznGdrouQ-U4eiGCpAIKzQ5pQ7YiDzvr3JU1Uf45KQzFy8h-gSGL5JvNvBeMs0nu9ZjTySs7uOhfZy9u5m3vLPki5jk7W7AaOBJaAu_ot5KIFXGGb32Sjrpp4ePeK3Q53nkgxSBSi9pS7F1mcFwPZ89QucTsqLPDID-O1cnBivDIhkv26qC9Yq-A0fguXG4S8briSyvcGnxQD9awD0hPmqfhNGhx6SE-hi2-YLxXH01VQVjlUfmyQVscWz12Sop6iyqK9apaKx55blXVXPOSzxMNcXUA","token_type":"bearer","refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ0ZXN0Iiwic2NvcGUiOlsidXNlci52aWV3cHJvZmlsZSJdLCJhdGkiOiIxZGVjNzk0YS1hY2E1LTRlOGYtYjg0OS03NmJhZWU3NjUwMDAiLCJleHAiOjE3MDgwODI2ODIsImF1dGhvcml0aWVzIjpbIlJPTEVfVU5JRklFRF9FTlFVSVJJRVMiXSwianRpIjoiYWRhNzNkMjUtZDZkZS00YjQ3LTliOGMtNTc0ZGUwMDVhNDRmIiwiY2xpZW50X2lkIjoidGVzdCJ9.K7WC0Ngb81nesCd65ZyV2O2fh0Q38Z2vtZ9-JLB--ixTMncJOCDZOD23ItDb4km9SABcOfH8uuq-pL4g9F21m2pETEJjBOLYK0gzPy_h2qgd50bUkHc9NrBU3t03cwS5yIwpzU7UiZGX2rLrRz-K9Y73TdY5OpStv3rRH0IHo4MFRzVvWYmmyTatQOM67C-MgxpFiDhpjIlaKt6fWCaZ05cn4m-B2TfZGR349GI9VpZtexfa5E2nN3kpGF8BskN88Q8o2N62ULI3xt9uba1KheDhaKmlNKw58DqsNfiTQAyF6KP48axaZVXUmcLlVqmc_KpJNNxb-5-fXdFDa6FZjw","expires_in":11999,"scope":"user.viewprofile","jti":"1dec794a-aca5-4e8f-b849-76baee765000"}
+2024-02-14 12:24:42.005 -  - THE TOKEN::eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MjE4ODIsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6IjFkZWM3OTRhLWFjYTUtNGU4Zi1iODQ5LTc2YmFlZTc2NTAwMCIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.gbCyZom3yAUttwwEiaay9_hrSt4E6-mAXD6MTJhtBd3_IgR3aIlksLsRQRLznGdrouQ-U4eiGCpAIKzQ5pQ7YiDzvr3JU1Uf45KQzFy8h-gSGL5JvNvBeMs0nu9ZjTySs7uOhfZy9u5m3vLPki5jk7W7AaOBJaAu_ot5KIFXGGb32Sjrpp4ePeK3Q53nkgxSBSi9pS7F1mcFwPZ89QucTsqLPDID-O1cnBivDIhkv26qC9Yq-A0fguXG4S8briSyvcGnxQD9awD0hPmqfhNGhx6SE-hi2-YLxXH01VQVjlUfmyQVscWz12Sop6iyqK9apaKx55blXVXPOSzxMNcXUA
+2024-02-14 12:24:42.130 -  - org.apache.http.conn.HttpHostConnectException: Connect to 10.4.138.71:443 [/10.4.138.71] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at HttpUtil.post(HttpUtil.java:44)
+	at CardOnboardingService.cardOnboard(CardOnboardingService.java:83)
+	at CardAuthController.cardOnboarding(CardAuthController.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 64 more
+
+2024-02-14 12:24:42.335 -  - THE CARD REQUEST SENT:::CardOnboardingModelRequest{hostHeaderInfo = 'HostHeaderInfo{sourceCode = 'ECOOBANKMOBILE',requestType = 'ID',requestId = 'CARD8c4383f27',sourceChannelId = 'MOBILE',ipAddress = '1.1.1.1',requestToken = '25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c',affiliateCode = 'EGH'}',request = 'Request{cvv = '',expiry = '2406',pan = 'r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj',affiliateCode = 'EGH'}'}
+2024-02-14 12:24:42.434 -  - THE RESP::Connect to 10.4.138.71:443 [/10.4.138.71] failed: Connection refused
+2024-02-14 12:25:11.770 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 12:25:18.450 -  - Starting SmeappCardOnboardingServiceApplication on EPG-ISBOATENG02.ecobank.group with PID 12783 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 12:25:18.452 -  - The following profiles are active: dev
+2024-02-14 12:25:19.452 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$297b6a46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 12:25:19.489 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 12:25:19.757 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 12:25:19.769 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 12:25:19.770 -  - Starting service [Tomcat]
+2024-02-14 12:25:19.770 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 12:25:19.855 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 12:25:19.856 -  - Root WebApplicationContext: initialization completed in 1358 ms
+2024-02-14 12:25:20.350 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 12:25:20.487 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 12:25:20.667 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 12:25:20.691 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 12:25:20.891 -  - Started SmeappCardOnboardingServiceApplication in 2.84 seconds (JVM running for 3.19)
+2024-02-14 12:25:30.932 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 12:25:30.933 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 12:25:30.939 -  - Completed initialization in 6 ms
+2024-02-14 12:25:31.066 -  - THE CARD MODEL PAYLOAD::{"hostHeaderInfo":{"sourceCode":"ECOOBANKMOBILE","requestType":"ID","requestId":"CARD5eb689a1e","sourceChannelId":"MOBILE","ipAddress":"1.1.1.1","requestToken":"25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c","affiliateCode":"EGH"},"request":{"cvv":"","expiry":"2406","pan":"r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj","affiliateCode":"EGH"}}
+2024-02-14 12:25:31.068 -  - The card onboarding url::http://10.4.138.71:7003/unifiedapis-v2/services/debitcarddetails
+2024-02-14 12:25:31.069 -  - THE UNIFIED TOKEN URL::https://160.119.246.165/authorization-server-v1/oauth/token?grant_type=password&client_id=test&client_secret=test&username=test&password=testing
+2024-02-14 12:25:33.442 -  - THE SERVER TOKEN RESPONSE::{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MjE5MzQsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6ImZlMzQwNGE2LWYyZjEtNDFlYi1hMTVhLTI1ZjYxNGNhMDUxMyIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.VmdXbis0N6i4BVwUhBg4xaNqAnk6uxaiius1cw2ABew4atcFo-wJhAmR5sQAz8ATXoEMgcpveIEvR7IX95QWkCFPWOYzNtyAhWSy_133RcdzclIpjDOtfcQ7DLeO7p-JH9Y6sac-IkWup3LAW6hqhenJfYwvrmuSgpeiWBUYgczsfSmIssqZBvxmSWVaLUU0N6u76EvHIkqknCc4Xrab7vxXt1UBsW4KaKd3EIPtoNeVO4wuiPwiNrgT4HsaxSa0bOPSDu7obqnj4PHDkT7kQ7F4-lNkIKaFvAcRwYL410pARDWcjawQtAWzRW7_C9eT1VGkMvMotkUJig_Rk8LJmg","token_type":"bearer","refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ0ZXN0Iiwic2NvcGUiOlsidXNlci52aWV3cHJvZmlsZSJdLCJhdGkiOiJmZTM0MDRhNi1mMmYxLTQxZWItYTE1YS0yNWY2MTRjYTA1MTMiLCJleHAiOjE3MDgwODI3MzQsImF1dGhvcml0aWVzIjpbIlJPTEVfVU5JRklFRF9FTlFVSVJJRVMiXSwianRpIjoiMzdkZDRmNjgtZDc5OC00MzcwLWFjYmYtNjZmOTFhZWQ3MGIwIiwiY2xpZW50X2lkIjoidGVzdCJ9.TFzg970sm3IKKQpWVporA0FX4D0UB8MA2uf9WB-iJlNN0Dmuj29jETsIHWNRLoUXwwLmwFh9ENLUlhmOcmpaSwqA4VNcolZiQPAVN3hoTs7dNa4AeHka6m_EfheAJWgpRajyLHTjVH7OmHBox4liZhcoL0_ee3Eo9RCKQtnkDHfVEE9piypjAhFwNgdREONh-AFBwHaMy1T1dgVctjIVRE4zbx65zhAUzF2k29bbzwSyKUxrv8OHHr8ZnrkQGHNHrc7h3R0y_urP0qheNA4RouwhhhpMJHt_bZbbF6233YkNO5k8u9TgUFk2MLP_hxw69B66IyX4m_wEimNftgg_jA","expires_in":11999,"scope":"user.viewprofile","jti":"fe3404a6-f2f1-41eb-a15a-25f614ca0513"}
+2024-02-14 12:25:33.447 -  - THE TOKEN::eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MjE5MzQsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6ImZlMzQwNGE2LWYyZjEtNDFlYi1hMTVhLTI1ZjYxNGNhMDUxMyIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.VmdXbis0N6i4BVwUhBg4xaNqAnk6uxaiius1cw2ABew4atcFo-wJhAmR5sQAz8ATXoEMgcpveIEvR7IX95QWkCFPWOYzNtyAhWSy_133RcdzclIpjDOtfcQ7DLeO7p-JH9Y6sac-IkWup3LAW6hqhenJfYwvrmuSgpeiWBUYgczsfSmIssqZBvxmSWVaLUU0N6u76EvHIkqknCc4Xrab7vxXt1UBsW4KaKd3EIPtoNeVO4wuiPwiNrgT4HsaxSa0bOPSDu7obqnj4PHDkT7kQ7F4-lNkIKaFvAcRwYL410pARDWcjawQtAWzRW7_C9eT1VGkMvMotkUJig_Rk8LJmg
+2024-02-14 12:25:33.698 -  - THE CARD REQUEST SENT:::CardOnboardingModelRequest{hostHeaderInfo = 'HostHeaderInfo{sourceCode = 'ECOOBANKMOBILE',requestType = 'ID',requestId = 'CARD5eb689a1e',sourceChannelId = 'MOBILE',ipAddress = '1.1.1.1',requestToken = '25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c',affiliateCode = 'EGH'}',request = 'Request{cvv = '',expiry = '2406',pan = 'r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj',affiliateCode = 'EGH'}'}
+2024-02-14 12:25:33.699 -  - THE RESP::{"error":"access_denied","error_description":"Access is denied"}
+2024-02-14 12:29:48.276 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 12:30:00.787 -  - Starting SmeappCardOnboardingServiceApplication on EPG-ISBOATENG02.ecobank.group with PID 12907 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 12:30:00.793 -  - The following profiles are active: dev
+2024-02-14 12:30:02.823 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d831b15c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 12:30:02.889 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 12:30:03.332 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 12:30:03.354 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 12:30:03.354 -  - Starting service [Tomcat]
+2024-02-14 12:30:03.354 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 12:30:03.468 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 12:30:03.468 -  - Root WebApplicationContext: initialization completed in 2543 ms
+2024-02-14 12:30:04.269 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 12:30:04.513 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 12:30:04.836 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 12:30:04.893 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 12:30:05.267 -  - Started SmeappCardOnboardingServiceApplication in 5.407 seconds (JVM running for 6.962)
+2024-02-14 12:30:09.530 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 12:30:09.530 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 12:30:09.545 -  - Completed initialization in 15 ms
+2024-02-14 12:30:09.800 -  - THE CARD MODEL PAYLOAD::{"hostHeaderInfo":{"sourceCode":"ECOOBANKMOBILE","requestType":"ID","requestId":"CARD69d36a737","sourceChannelId":"MOBILE","ipAddress":"1.1.1.1","requestToken":"25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c","affiliateCode":"EGH"},"request":{"cvv":"","expiry":"2406","pan":"r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj","affiliateCode":"EGH"}}
+2024-02-14 12:30:09.803 -  - The card onboarding url::http://10.4.138.71:7003/unifiedapis-v2/services/debitcarddetails
+2024-02-14 12:30:09.804 -  - THE UNIFIED TOKEN URL::https://160.119.246.165/authorization-server-v1/oauth/token?grant_type=password&client_id=test&client_secret=test&username=test&password=testing
+2024-02-14 12:30:12.619 -  - THE SERVER TOKEN RESPONSE::{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MjIyMTMsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6IjFhYTY2M2VmLTE1NDctNDQwNi1hZTY5LTcwYzhkZGFmMDdjZSIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.Q2ZPURsnnwedgsIxaxEfYAVoqUSh64y4B73ZLkQsjU_LHNBKFfuNAQbgQucznk9S8ly_G4RRhA_Rni-sul5SGY2eABbqaY5pYLvErhQA96rHdYmF-DQh2EGuvI3mpsgp4hZBVYxXtAtILgpSbT4JUKy6CAx8HDdzs8SPUChvTiotMFdLpInc3akl4jSUOdaGwHERYEPDtrlFXXhgHtsJGaUBQQ_FpN9jYaODgLA44F89T9peroiC2eK6wTvmfg7EbslTZQVc77DIlzRB6aCfWTIKpLhvF0DLKZiHLM2sfYMR4ZE-h3uTOiL8FJLBybhmaWtV4GIyg5HVBmD35y3AUg","token_type":"bearer","refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ0ZXN0Iiwic2NvcGUiOlsidXNlci52aWV3cHJvZmlsZSJdLCJhdGkiOiIxYWE2NjNlZi0xNTQ3LTQ0MDYtYWU2OS03MGM4ZGRhZjA3Y2UiLCJleHAiOjE3MDgwODMwMTMsImF1dGhvcml0aWVzIjpbIlJPTEVfVU5JRklFRF9FTlFVSVJJRVMiXSwianRpIjoiYzljNzEwZDMtMmM1OS00ZDY5LWIzMGUtNGRjNzg4MDhmMTZkIiwiY2xpZW50X2lkIjoidGVzdCJ9.TbRu8t5KImhqKSgzeuzD8K5NjR3GcSECriJZb1zPFDTK1HUd3s7vAUZNwpuKnf0k8h6fJe6AgprugFTM9JJEob8QZCcWosMDii9UiY19EicuquFZeVHf2PUPQyR2VN26xhQFM00SDhRdYTXaS3au133j3jg1mWnbAkf6G3xThL-Ocr3MViqIkGmKNtyBkTWdGD3LXXfchEPbJ0dO-mBYnSkOsir_kmOo3foG8YNJ55OO2SkKuD2p_GUnYlbf0V2PDxltc8uuxPYJ7d487kDFb_TyVZJWPIrDpxM9PwDNsN968eY2uFqze3UZRUjkhlL4YJ_Q_ugTHgZMquoSA_uBVw","expires_in":11999,"scope":"user.viewprofile","jti":"1aa663ef-1547-4406-ae69-70c8ddaf07ce"}
+2024-02-14 12:30:12.627 -  - THE TOKEN::eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MjIyMTMsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6IjFhYTY2M2VmLTE1NDctNDQwNi1hZTY5LTcwYzhkZGFmMDdjZSIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.Q2ZPURsnnwedgsIxaxEfYAVoqUSh64y4B73ZLkQsjU_LHNBKFfuNAQbgQucznk9S8ly_G4RRhA_Rni-sul5SGY2eABbqaY5pYLvErhQA96rHdYmF-DQh2EGuvI3mpsgp4hZBVYxXtAtILgpSbT4JUKy6CAx8HDdzs8SPUChvTiotMFdLpInc3akl4jSUOdaGwHERYEPDtrlFXXhgHtsJGaUBQQ_FpN9jYaODgLA44F89T9peroiC2eK6wTvmfg7EbslTZQVc77DIlzRB6aCfWTIKpLhvF0DLKZiHLM2sfYMR4ZE-h3uTOiL8FJLBybhmaWtV4GIyg5HVBmD35y3AUg
+2024-02-14 12:30:12.910 -  - THE CARD REQUEST SENT:::CardOnboardingModelRequest{hostHeaderInfo = 'HostHeaderInfo{sourceCode = 'ECOOBANKMOBILE',requestType = 'ID',requestId = 'CARD69d36a737',sourceChannelId = 'MOBILE',ipAddress = '1.1.1.1',requestToken = '25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c',affiliateCode = 'EGH'}',request = 'Request{cvv = '',expiry = '2406',pan = 'r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj',affiliateCode = 'EGH'}'}
+2024-02-14 12:30:12.910 -  - THE RESP::{"error":"access_denied","error_description":"Access is denied"}
+2024-02-14 12:30:37.359 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 12:30:47.042 -  - Starting SmeappCardOnboardingServiceApplication on EPG-ISBOATENG02.ecobank.group with PID 12971 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 12:30:47.045 -  - The following profiles are active: dev
+2024-02-14 12:30:48.552 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$297b6a46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 12:30:48.600 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 12:30:49.011 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 12:30:49.033 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 12:30:49.034 -  - Starting service [Tomcat]
+2024-02-14 12:30:49.035 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 12:30:49.194 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 12:30:49.205 -  - Root WebApplicationContext: initialization completed in 2087 ms
+2024-02-14 12:30:50.244 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 12:30:50.495 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 12:30:50.818 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 12:30:50.882 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 12:30:51.293 -  - Started SmeappCardOnboardingServiceApplication in 4.842 seconds (JVM running for 5.331)
+2024-02-14 12:30:54.953 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 12:30:54.954 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 12:30:54.968 -  - Completed initialization in 12 ms
+2024-02-14 12:30:55.182 -  - THE CARD MODEL PAYLOAD::{"hostHeaderInfo":{"sourceCode":"ECOOBANKMOBILE","requestType":"ID","requestId":"CARD804a3415f","sourceChannelId":"MOBILE","ipAddress":"1.1.1.1","requestToken":"25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c","affiliateCode":"EGH"},"request":{"cvv":"","expiry":"2406","pan":"r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj","affiliateCode":"EGH"}}
+2024-02-14 12:30:55.185 -  - The card onboarding url::http://10.4.138.71:7003/unifiedapis-v2/services/debitcarddetails
+2024-02-14 12:30:55.185 -  - THE UNIFIED TOKEN URL::https://160.119.246.165/authorization-server-v1/oauth/token?grant_type=password&client_id=test&client_secret=test&username=test&password=testing
+2024-02-14 12:30:57.964 -  - THE SERVER TOKEN RESPONSE::{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MjIyNTgsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6ImQ0NTQ2NDU4LTEwZmQtNGVmYi05ZDBlLWUwNjJlODRhMTNmMiIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.cgT6uaF8CLFmAQ5VcLsxLTFUEurV3peiYCVNSl82v8jZD6B-p8s6bHA4SIrq1xgCCyJY_NHIPZqJHYqqZSHL8xrh9VvSk_YIABainq7oo33LiILkK6ST-8fT2hwZL54t-56IlfH6o7RAn4dtGakDiud6kbTBRMTEH0bXhv0HxM2iknEXIVC5fZsEoRRHe11vpFztTFZr4D8Z78sKbPB6U01qIXr5dm9Jd547rq6p8c1GhtksbcU55IgT3VFWUlq_w-Kh9Q5kTUvgmc5fkvDXWZlbnoFZjHMdCuBoGUf30LhQ0uUtqhZljMhXrU7bOIPFRMnL5FPjwCyNAzArQWv3OA","token_type":"bearer","refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ0ZXN0Iiwic2NvcGUiOlsidXNlci52aWV3cHJvZmlsZSJdLCJhdGkiOiJkNDU0NjQ1OC0xMGZkLTRlZmItOWQwZS1lMDYyZTg0YTEzZjIiLCJleHAiOjE3MDgwODMwNTgsImF1dGhvcml0aWVzIjpbIlJPTEVfVU5JRklFRF9FTlFVSVJJRVMiXSwianRpIjoiMTM0NzMwZjctMDAwMS00ODRlLTg4MGItZmFjYmQ1OTQ1Yzk0IiwiY2xpZW50X2lkIjoidGVzdCJ9.FVMBnnEHiUAoRK72k0JuzTc8_yV5QqrNi890nhBngFb1odA6Vl99wWdAihj0ahUJAGgSgnkBelPGfDs-j8C2NWu_XLEFso0s4evwBGzH6xof783_kvX88nSPtOvrLoJvxxf8rG5tVoeQcsbfWu2yXOJRDbfkdOUTn-dk313DIYmRH8RKqdPjF3HCyZswFQlfbesrf98F-C-mr6W8pndKm-5UrjImeBnT3as0yEmbaNNoqtgPOx7tfMEQXu7qeCg8KnwirXJmsf7tXfxu6259IiCtPinGXtFLDnpx5aOI9zhstHbZTUyUqs0FwVHoW9Yj7AiAm-vP6ZTDySayL9wKpg","expires_in":11999,"scope":"user.viewprofile","jti":"d4546458-10fd-4efb-9d0e-e062e84a13f2"}
+2024-02-14 12:30:57.971 -  - THE TOKEN::eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MjIyNTgsInVzZXJfbmFtZSI6InRlc3QiLCJhdXRob3JpdGllcyI6WyJST0xFX1VOSUZJRURfRU5RVUlSSUVTIl0sImp0aSI6ImQ0NTQ2NDU4LTEwZmQtNGVmYi05ZDBlLWUwNjJlODRhMTNmMiIsImNsaWVudF9pZCI6InRlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl19.cgT6uaF8CLFmAQ5VcLsxLTFUEurV3peiYCVNSl82v8jZD6B-p8s6bHA4SIrq1xgCCyJY_NHIPZqJHYqqZSHL8xrh9VvSk_YIABainq7oo33LiILkK6ST-8fT2hwZL54t-56IlfH6o7RAn4dtGakDiud6kbTBRMTEH0bXhv0HxM2iknEXIVC5fZsEoRRHe11vpFztTFZr4D8Z78sKbPB6U01qIXr5dm9Jd547rq6p8c1GhtksbcU55IgT3VFWUlq_w-Kh9Q5kTUvgmc5fkvDXWZlbnoFZjHMdCuBoGUf30LhQ0uUtqhZljMhXrU7bOIPFRMnL5FPjwCyNAzArQWv3OA
+2024-02-14 12:30:58.261 -  - THE CARD REQUEST SENT:::CardOnboardingModelRequest{hostHeaderInfo = 'HostHeaderInfo{sourceCode = 'ECOOBANKMOBILE',requestType = 'ID',requestId = 'CARD804a3415f',sourceChannelId = 'MOBILE',ipAddress = '1.1.1.1',requestToken = '25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c',affiliateCode = 'EGH'}',request = 'Request{cvv = '',expiry = '2406',pan = 'r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj',affiliateCode = 'EGH'}'}
+2024-02-14 12:30:58.262 -  - THE RESP::{"error":"access_denied","error_description":"Access is denied"}
+2024-02-14 12:31:36.137 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 12:31:45.971 -  - Starting SmeappCardOnboardingServiceApplication on EPG-ISBOATENG02.ecobank.group with PID 13020 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 12:31:45.976 -  - The following profiles are active: dev
+2024-02-14 12:31:47.522 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c6655e82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 12:31:47.596 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 12:31:48.041 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 12:31:48.060 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 12:31:48.061 -  - Starting service [Tomcat]
+2024-02-14 12:31:48.061 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 12:31:48.174 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 12:31:48.175 -  - Root WebApplicationContext: initialization completed in 2130 ms
+2024-02-14 12:31:48.974 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 12:31:49.181 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 12:31:49.462 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 12:31:49.513 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 12:31:49.879 -  - Started SmeappCardOnboardingServiceApplication in 4.659 seconds (JVM running for 5.308)
+2024-02-14 12:31:53.533 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 12:31:53.534 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 12:31:53.544 -  - Completed initialization in 10 ms
+2024-02-14 12:31:53.746 -  - THE CARD MODEL PAYLOAD::{"hostHeaderInfo":{"sourceCode":"ECOOBANKMOBILE","requestType":"ID","requestId":"CARD7f30ba7d7","sourceChannelId":"MOBILE","ipAddress":"1.1.1.1","requestToken":"25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c","affiliateCode":"EGH"},"request":{"cvv":"","expiry":"2406","pan":"r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj","affiliateCode":"EGH"}}
+2024-02-14 12:31:53.750 -  - The card onboarding url::http://10.4.138.71:7003/unifiedapis-v2/services/debitcarddetails
+2024-02-14 12:31:53.751 -  - THE UNIFIED TOKEN URL::http://10.4.138.71:7003/authorization-server-v1/oauth/token?grant_type=password&client_id=test&client_secret=test&username=sme_app&password=sme_app@1234
+2024-02-14 12:31:55.915 -  - THE SERVER TOKEN RESPONSE::{"error":"invalid_grant","error_description":"Bad credentials"}
+2024-02-14 12:33:58.159 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 12:34:08.057 -  - Starting SmeappCardOnboardingServiceApplication on EPG-ISBOATENG02.ecobank.group with PID 13100 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 12:34:08.061 -  - The following profiles are active: dev
+2024-02-14 12:34:09.584 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$297b6a46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 12:34:09.650 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 12:34:10.090 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 12:34:10.108 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 12:34:10.109 -  - Starting service [Tomcat]
+2024-02-14 12:34:10.110 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 12:34:10.222 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 12:34:10.223 -  - Root WebApplicationContext: initialization completed in 2090 ms
+2024-02-14 12:34:10.976 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 12:34:11.166 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 12:34:11.450 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 12:34:11.501 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 12:34:11.855 -  - Started SmeappCardOnboardingServiceApplication in 4.489 seconds (JVM running for 5.044)
+2024-02-14 12:34:17.636 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 12:34:17.638 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 12:34:17.652 -  - Completed initialization in 14 ms
+2024-02-14 12:34:17.890 -  - THE CARD MODEL PAYLOAD::{"hostHeaderInfo":{"sourceCode":"ECOOBANKMOBILE","requestType":"ID","requestId":"CARD6299a388c","sourceChannelId":"MOBILE","ipAddress":"1.1.1.1","requestToken":"25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c","affiliateCode":"EGH"},"request":{"cvv":"","expiry":"2406","pan":"r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj","affiliateCode":"EGH"}}
+2024-02-14 12:34:17.893 -  - The card onboarding url::http://10.4.138.71:7003/unifiedapis-v2/services/debitcarddetails
+2024-02-14 12:34:17.894 -  - THE UNIFIED TOKEN URL::http://10.4.138.71:7003/authorization-server-v1/oauth/token?grant_type=password&client_id=test&client_secret=test&username=unified_test&password=unified_test@1234
+2024-02-14 12:34:20.306 -  - THE SERVER TOKEN RESPONSE::{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MjI0NjEsInVzZXJfbmFtZSI6InVuaWZpZWRfdGVzdCIsImF1dGhvcml0aWVzIjpbIlJPTEVfVU5JRklFRF9FTlFVSVJJRVMiLCJST0xFX1VOSUZJRURfUE9TVElORyIsIlJPTEVfVU5JRklFRF9DQVJEUyJdLCJqdGkiOiIxNzkzNjlhNy1iODQwLTRkZjQtYmZkOC03YjgwMmFkNmZlYjgiLCJjbGllbnRfaWQiOiJ0ZXN0Iiwic2NvcGUiOlsidXNlci52aWV3cHJvZmlsZSJdfQ.NVlRVu0trS2Q36wg_uDmW9AnIXN614PYSiSM1lViTXuQKopmlYMEnGjlNG9rdtMzaNll3aNvTfivotRgIiSPlaK6WxxeIjVpRTJuP6GDZa_XMhQ46iAiZVko8OAjJn2Oa87tZa2niFk6y3PF3ObHbYUxEyZ5C6IeZBVtIQiP0SVuzsE6uOfhDCooPs_JIcY38qNT9QJ87TK-2nIyVtIAQtSm9uhBz9CYO1yyBbirH97u2Bz9Uv8DUrQ56QPJwnEtIvBCOCoR5-UP9HIZHJ1OfdLzsSa1j8m0A8jk3Mayq8TuGkEZvec2rDfhI2gokZlJQ2yllvfWjdnGmsUMemrDBQ","token_type":"bearer","refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ1bmlmaWVkX3Rlc3QiLCJzY29wZSI6WyJ1c2VyLnZpZXdwcm9maWxlIl0sImF0aSI6IjE3OTM2OWE3LWI4NDAtNGRmNC1iZmQ4LTdiODAyYWQ2ZmViOCIsImV4cCI6MTcwODA4MzI2MCwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VTklGSUVEX0VOUVVJUklFUyIsIlJPTEVfVU5JRklFRF9QT1NUSU5HIiwiUk9MRV9VTklGSUVEX0NBUkRTIl0sImp0aSI6IjU5MjllYzMyLTI3YTUtNGY5Zi05YWY3LTMyYTgwY2YyYjkyYyIsImNsaWVudF9pZCI6InRlc3QifQ.HlXbhvzz44vxLbelI7faLKvh_lb2HMri9W5Vwz2ty8e1MDNKrYmT6hkEmt5TkURVU4b025D7RbvCgZQCOeveQoKDYazKrOrqBYjK9dg_4Dq6c3fO3fyE7ORcdgoJpTWHHR09luI5so1S8bpWrF5UIQRXgF_GctXrmNt0J7dt2ghqkC3G3FqON9ahSEFid8rfM0CIotGv4ltAmIzQXsD5JewLa-GAbDdXl805tUpOUTwEh4TbxqtdXVDPXXuS5R9p6aSLO35xqseytke5KagdDyJ5qLq4nP3iKy54L6O9Dh8dyY2hB9adHyFzsFHz8sizziWcx8uPgIKKFGaXP07wRA","expires_in":11999,"scope":"user.viewprofile","jti":"179369a7-b840-4df4-bfd8-7b802ad6feb8"}
+2024-02-14 12:34:20.312 -  - THE TOKEN::eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MjI0NjEsInVzZXJfbmFtZSI6InVuaWZpZWRfdGVzdCIsImF1dGhvcml0aWVzIjpbIlJPTEVfVU5JRklFRF9FTlFVSVJJRVMiLCJST0xFX1VOSUZJRURfUE9TVElORyIsIlJPTEVfVU5JRklFRF9DQVJEUyJdLCJqdGkiOiIxNzkzNjlhNy1iODQwLTRkZjQtYmZkOC03YjgwMmFkNmZlYjgiLCJjbGllbnRfaWQiOiJ0ZXN0Iiwic2NvcGUiOlsidXNlci52aWV3cHJvZmlsZSJdfQ.NVlRVu0trS2Q36wg_uDmW9AnIXN614PYSiSM1lViTXuQKopmlYMEnGjlNG9rdtMzaNll3aNvTfivotRgIiSPlaK6WxxeIjVpRTJuP6GDZa_XMhQ46iAiZVko8OAjJn2Oa87tZa2niFk6y3PF3ObHbYUxEyZ5C6IeZBVtIQiP0SVuzsE6uOfhDCooPs_JIcY38qNT9QJ87TK-2nIyVtIAQtSm9uhBz9CYO1yyBbirH97u2Bz9Uv8DUrQ56QPJwnEtIvBCOCoR5-UP9HIZHJ1OfdLzsSa1j8m0A8jk3Mayq8TuGkEZvec2rDfhI2gokZlJQ2yllvfWjdnGmsUMemrDBQ
+2024-02-14 12:34:21.592 -  - THE CARD REQUEST SENT:::CardOnboardingModelRequest{hostHeaderInfo = 'HostHeaderInfo{sourceCode = 'ECOOBANKMOBILE',requestType = 'ID',requestId = 'CARD6299a388c',sourceChannelId = 'MOBILE',ipAddress = '1.1.1.1',requestToken = '25ea8341f1d20c5accc64ba99b97f29bb861b719d280cbd4185ce9b1c506f49cc9017f7e3b5ee20edcdcab30d6e2217a6ac7977b13b33a98c42100dcd6c21c',affiliateCode = 'EGH'}',request = 'Request{cvv = '',expiry = '2406',pan = 'r/hRlghLo3qKEWuPZYCvvKJP1Zdt2FBj',affiliateCode = 'EGH'}'}
+2024-02-14 12:34:21.592 -  - THE RESP::{"hostHeaderInfo":{"sourceCode":"ECOOBANKMOBILE","requestId":"CARD6299a388c","affiliateCode":"EGH","responseCode":"999","responseMessage":"Card Details can't be gotten at the moment"},"response":null}
+2024-02-14 13:51:09.453 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 13:51:54.988 -  - Starting SmeappCardOnboardingServiceApplication on ADEGOKEs-MacBook-Pro.local with PID 14120 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 13:51:54.992 -  - The following profiles are active: dev
+2024-02-14 13:51:56.082 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3848f024] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 13:51:56.134 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 13:51:56.439 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 13:51:56.452 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 13:51:56.453 -  - Starting service [Tomcat]
+2024-02-14 13:51:56.453 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 13:51:56.528 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 13:51:56.529 -  - Root WebApplicationContext: initialization completed in 1483 ms
+2024-02-14 13:51:57.080 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 13:51:57.221 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 13:51:57.432 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 13:51:57.473 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 13:51:57.687 -  - Started SmeappCardOnboardingServiceApplication in 3.383 seconds (JVM running for 3.845)
+2024-02-14 13:52:30.875 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 13:52:30.876 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 13:52:30.907 -  - Completed initialization in 10 ms
+2024-02-14 13:53:43.273 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 13:53:53.689 -  - Starting SmeappCardOnboardingServiceApplication on ADEGOKEs-MacBook-Pro.local with PID 14198 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 13:53:53.692 -  - The following profiles are active: dev
+2024-02-14 13:53:54.823 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c6655e82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 13:53:54.875 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 13:53:55.203 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 13:53:55.218 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 13:53:55.218 -  - Starting service [Tomcat]
+2024-02-14 13:53:55.218 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 13:53:55.304 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 13:53:55.305 -  - Root WebApplicationContext: initialization completed in 1566 ms
+2024-02-14 13:53:55.925 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 13:53:56.098 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 13:53:56.304 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 13:53:56.348 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 13:53:56.604 -  - Started SmeappCardOnboardingServiceApplication in 3.434 seconds (JVM running for 3.853)
+2024-02-14 13:54:00.247 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 13:54:00.248 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 13:54:00.264 -  - Completed initialization in 16 ms
+2024-02-14 13:55:14.831 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 13:55:25.145 -  - Starting SmeappCardOnboardingServiceApplication on ADEGOKEs-MacBook-Pro.local with PID 14257 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 13:55:25.148 -  - The following profiles are active: dev
+2024-02-14 13:55:26.311 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$297b6a46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 13:55:26.363 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 13:55:26.706 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 13:55:26.730 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 13:55:26.731 -  - Starting service [Tomcat]
+2024-02-14 13:55:26.731 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 13:55:26.832 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 13:55:26.833 -  - Root WebApplicationContext: initialization completed in 1635 ms
+2024-02-14 13:55:27.447 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 13:55:27.635 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 13:55:27.879 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 13:55:27.917 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 13:55:28.192 -  - Started SmeappCardOnboardingServiceApplication in 3.556 seconds (JVM running for 3.931)
+2024-02-14 13:56:08.184 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 13:56:08.185 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 13:56:08.191 -  - Completed initialization in 6 ms
+2024-02-14 13:56:08.277 -  - THE PROFILE::null
+2024-02-14 13:57:18.296 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 13:57:28.818 -  - Starting SmeappCardOnboardingServiceApplication on ADEGOKEs-MacBook-Pro.local with PID 14338 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 13:57:28.820 -  - The following profiles are active: dev
+2024-02-14 13:57:29.936 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$297b6a46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 13:57:29.986 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 13:57:30.292 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 13:57:30.304 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 13:57:30.305 -  - Starting service [Tomcat]
+2024-02-14 13:57:30.305 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 13:57:30.390 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 13:57:30.391 -  - Root WebApplicationContext: initialization completed in 1522 ms
+2024-02-14 13:57:31.017 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 13:57:31.172 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 13:57:31.387 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 13:57:31.424 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 13:57:31.665 -  - Started SmeappCardOnboardingServiceApplication in 3.316 seconds (JVM running for 3.681)
+2024-02-14 13:57:38.949 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 13:57:38.949 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 13:57:38.960 -  - Completed initialization in 10 ms
+2024-02-14 13:57:39.048 -  - THE PROFILE::null
+2024-02-14 13:59:32.957 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 13:59:41.015 -  - Starting SmeappCardOnboardingServiceApplication on ADEGOKEs-MacBook-Pro.local with PID 14414 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 13:59:41.018 -  - The following profiles are active: dev
+2024-02-14 13:59:42.283 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$297b6a46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 13:59:42.338 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 13:59:42.667 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 13:59:42.679 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 13:59:42.680 -  - Starting service [Tomcat]
+2024-02-14 13:59:42.680 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 13:59:42.764 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 13:59:42.764 -  - Root WebApplicationContext: initialization completed in 1680 ms
+2024-02-14 13:59:43.395 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 13:59:43.560 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 13:59:43.779 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 13:59:43.822 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 13:59:44.066 -  - Started SmeappCardOnboardingServiceApplication in 3.75 seconds (JVM running for 4.223)
+2024-02-14 14:25:11.858 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-14 14:25:23.159 -  - Starting SmeappCardOnboardingServiceApplication on ADEGOKEs-MacBook-Pro.local with PID 15092 (/Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adegokeadesoye in /Users/adegokeadesoye/Desktop/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-14 14:25:23.161 -  - The following profiles are active: dev
+2024-02-14 14:25:24.429 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d46b185a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-14 14:25:24.472 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-14 14:25:24.802 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-14 14:25:24.816 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-14 14:25:24.816 -  - Starting service [Tomcat]
+2024-02-14 14:25:24.816 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-14 14:25:24.906 -  - Initializing Spring embedded WebApplicationContext
+2024-02-14 14:25:24.906 -  - Root WebApplicationContext: initialization completed in 1697 ms
+2024-02-14 14:25:25.561 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-14 14:25:25.759 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-14 14:25:25.985 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-14 14:25:26.027 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-14 14:25:26.325 -  - Started SmeappCardOnboardingServiceApplication in 3.693 seconds (JVM running for 4.237)
+2024-02-14 14:25:47.758 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14 14:25:47.759 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-14 14:25:47.770 -  - Completed initialization in 11 ms
+2024-02-14 14:25:47.881 -  - THE PROFILE::UAT
+2024-02-14 14:25:59.275 -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-19 14:51:45.065 -  - Starting SmeappCardOnboardingServiceApplication on EFR-LAPTOP-217.ecobank.group with PID 14508 (/Users/adesoyeadegoke/Documents/Development/smeapp-backend/smeapp-card-onboarding-service/target/classes started by adesoyeadegoke in /Users/adesoyeadegoke/Documents/Development/smeapp-backend/smeapp-card-onboarding-service)
+2024-02-19 14:51:45.067 -  - The following profiles are active: dev
+2024-02-19 14:51:46.014 -  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$38aa7c74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-19 14:51:46.059 -  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-19 14:51:46.262 -  - Tomcat initialized with port(s): 8082 (http)
+2024-02-19 14:51:46.271 -  - Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-19 14:51:46.272 -  - Starting service [Tomcat]
+2024-02-19 14:51:46.272 -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-02-19 14:51:46.420 -  - Initializing Spring embedded WebApplicationContext
+2024-02-19 14:51:46.420 -  - Root WebApplicationContext: initialization completed in 1299 ms
+2024-02-19 14:51:46.900 -  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-02-19 14:51:47.020 -  - Initializing ExecutorService 'applicationTaskExecutor'
+2024-02-19 14:51:47.179 -  - Starting ProtocolHandler ["http-nio-8082"]
+2024-02-19 14:51:47.212 -  - Tomcat started on port(s): 8082 (http) with context path ''
+2024-02-19 14:51:47.520 -  - Started SmeappCardOnboardingServiceApplication in 4.164 seconds (JVM running for 4.508)
+2024-02-19 14:55:03.924 -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19 14:55:03.925 -  - Initializing Servlet 'dispatcherServlet'
+2024-02-19 14:55:03.931 -  - Completed initialization in 6 ms
+2024-02-19 14:55:03.991 -  - THE PROFILE::UAT
+2024-02-19 14:55:03.993 -  - THE FINAL RRESPONSE::CardResponse(message=SUCCESS, statusCode=200, data=Data{accounts=3270008571})
+2024-02-19 14:55:28.540 -  - Shutting down ExecutorService 'applicationTaskExecutor'
