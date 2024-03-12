@@ -12,29 +12,14 @@
 	<groupId>com.decagon.crud</groupId>
 	<artifactId>decagon</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>${eco}</packaging>
 	<name>decagon</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
-		<eco>war</eco>
 		<start-class>com.decagon.crud.AccountCreationServiceApplication</start-class>
 		<build.final.name>decagon</build.final.name>
 	</properties>
-	<profiles>
-		<profile>
-			<id>dev</id>
-			<properties>
-				<eco>jar</eco>
-			</properties>
-		</profile>
-		<profile>
-			<id>weblogic</id>
-			<properties>
-				<eco>war</eco>
-			</properties>
-		</profile>
-	</profiles>
+
 	<dependencies>
 
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
